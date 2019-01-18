@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            body 
+            {
+                margin-top: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;}
+            
+            /* Full-width input fields */
+            input[type=text], input[type=password] {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              box-sizing: border-box;
+            }
+            button {
+         background-color: #4CAF50;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 35%;
+         }
+         .cancelbtn {
+         width: 35%;
+         margin-left: 20px;
+         padding: 12px 20px;
+         background-color: #f44336;
+         }
+         .container {
+         padding: 18px;
+         background-color: rgb(218, 245, 187);
+
+         }
+        span.psw {
+         float: right;
+         padding-top: 16px;
+        }
+
+    </style>       
+
+</head>
+<body>
+
+  
+   <form>
+
+    <div class="container">
+      <label for="Email"><b>Email</b></label>
+      <br>
+      <input type="text" placeholder="ForExample@gmail.com" name="uname" required>
+      <br>
+      <label for="urname"><b>Username</b></label>
+      <br>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+            <button type="submit">Login</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <label>
+                <br>
+            <input type="checkbox" checked="unchecked" name="remember"> Remember me
+            </label> 
+    </div>
+    <div class ="container">
+         <span >No acount?<a href="signup.html"> Create One!</a>
+           <br>
+            <a href="#">Forgot password?</a>
+        <br>
+        <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin">Login through Google</a>
+        <br>
+        
+    </div>
+     <div class="container">            
+     </div>
+    </form>
+    <script>
+            var modal = document.getElementById('id01');    
+    </script>
+    
+</body>
+</html>
